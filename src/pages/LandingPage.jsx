@@ -31,54 +31,65 @@ function LandingPage() {
         <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
             <Helmet>
                 <title>Dat A Boi Enterprises | Premium Tire Sales & Photography Services</title>
-                <meta name="description" content="Discover premium tire sales and professional photography services at Dat A Boi Enterprises. We offer high-quality tires for every vehicle and stunning photography for events, portraits, and creative projects." />
-                <meta name="keywords" content="tire sales, photography, car tires, premium tires, professional photography, event photography, portrait photography, creative photography" />
+                <meta
+                    name="description"
+                    content="Discover premium tire sales and professional photography services at Dat A Boi Enterprises. We offer high-quality tires for every vehicle and stunning photography for events, portraits, and creative projects."
+                />
+                <meta
+                    name="keywords"
+                    content="tire sales, photography, car tires, premium tires, professional photography, event photography, portrait photography, creative photography"
+                />
                 <meta name="robots" content="index, follow" />
             </Helmet>
             {/* Hero Section */}
-            <div className="flex-grow flex flex-col items-center justify-center px-8 text-center py-12">
-                <div className="flex flex-col md:flex-row items-center justify-center px-8 text-center py-12">
-                    <img src="./dab-logo-with-text.png" alt="Dat A Boi Enterprises Logo" className="w-auto sm:w-auto md:w-auto lg:w-1/3 object-contain" />
-
+            <div className="relative flex-grow flex flex-col items-center justify-center text-center">
+                {/* Split Video Background */}
+                <div className="absolute inset-0 flex w-full h-full z-0">
+                    <video
+                        className="w-1/2 h-full object-cover"
+                        src="./tire.mp4"
+                        autoPlay
+                        loop
+                        muted
+                    />
+                    <video
+                        className="w-1/2 h-full object-cover"
+                        src="./camera.mp4"
+                        autoPlay
+                        loop
+                        muted
+                    />
                 </div>
-                <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12">
-                    Discover the perfect combination of premium tire sales and stunning photography services. We bring you unmatched quality, tailored to meet your needs.
-                </p>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-gray-900 opacity-80 z-0"></div>
 
-                {/* Service Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
-                    <Link
-                        to="/tire-sales"
-                        className="relative bg-campusBrick rounded-lg shadow-lg p-8 pb-16 transform transition-transform hover:scale-105 hover:shadow-xl overflow-hidden"
-                    >
-                        <h2 className="text-2xl font-bold mb-4 relative z-10">
-                            Tire Sales
-                        </h2>
-                        <p className="text-sm md:text-base relative z-10">
-                            Shop high-quality tires designed for every vehicle and terrain. Experience reliability, durability, and performance with our premium selection.
-                        </p>
-                        {/* Icon Background */}
-                        <i
-                            className="fas fa-car absolute bottom-4 right-4 text-white opacity-10 text-[200px] pointer-events-none"
-                            aria-hidden="true"
-                        ></i>
-                    </Link>
-                    <Link
-                        to="/photography-portfolio"
-                        className="relative bg-diploma rounded-lg shadow-lg p-8 pb-16 transform transition-transform hover:scale-105 hover:shadow-xl overflow-hidden"
-                    >
-                        <h2 className="text-2xl font-bold mb-4 relative z-10">
-                            Photography
-                        </h2>
-                        <p className="text-sm md:text-base relative z-10">
-                            Explore captivating photography that captures life’s most memorable moments. Perfect for events, portraits, and creative projects.
-                        </p>
-                        {/* Icon Background */}
-                        <i
-                            className="fas fa-camera absolute bottom-4 right-4 text-white opacity-10 text-[200px] pointer-events-none"
-                            aria-hidden="true"
-                        ></i>
-                    </Link>
+                {/* Content */}
+                <div className="relative z-10 px-8 py-12 text-white">
+                    <img
+                        src="./dab-logo-with-text.png"
+                        alt="Dat A Boi Enterprises Logo"
+                        className="mx-auto w-1/3 md:w-1/4 object-contain mb-8"
+                    />
+                    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                        Premium Tire Sales & Stunning Photography
+                    </h1>
+                    <p className="mt-4 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                        Discover the perfect combination of high-quality tires and professional photography services tailored to meet your needs.
+                    </p>
+                    <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+                        <Link
+                            to="/tire-sales"
+                            className="w-auto px-6 py-3 bg-gradient-to-b from-clemsonOrange to-campusBrick rounded-full shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-center"
+                        >
+                            Shop Tires
+                        </Link>
+                        <Link
+                            to="/photography-portfolio"
+                            className="w-auto px-6 py-3 bg-gradient-to-b from-purple-600 to-purple-900 rounded-full shadow-md shadow-black/50 hover:outline hover:outline-purple-500 focus:outline focus:outline-purple-500 transition-all duration-100 active:from-purple-800 active:to-purple-900 active:translate-y-px text-center"
+                        >
+                            View Photography
+                        </Link>
+                    </div>
                 </div>
             </div>
 
@@ -91,7 +102,10 @@ function LandingPage() {
                         <ul className="space-y-2">
                             {['Tire Sales', 'Photography Portfolio', 'About Us', 'Contact'].map((link) => (
                                 <li key={link}>
-                                    <Link to={`/${link.toLowerCase().replace(/ /g, '-')}`} className="hover:underline">
+                                    <Link
+                                        to={`/${link.toLowerCase().replace(/ /g, '-')}`}
+                                        className="hover:underline"
+                                    >
                                         {link}
                                     </Link>
                                 </li>
@@ -135,7 +149,6 @@ function LandingPage() {
                                     required
                                 />
                                 <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-                                    {/* Replace this with your desired icon */}
                                     <i className="fas fa-envelope"></i>
                                 </span>
                             </div>
@@ -159,7 +172,7 @@ function LandingPage() {
                     <p>
                         © {new Date().getFullYear()} Dat A Boi Enterprises. All rights reserved.
                     </p>
-                    <p className="text-gray-400">
+                    <p>
                         Designed and Developed by{' '}
                         <a
                             href="https://www.cod-e-codes.com/"
