@@ -10,7 +10,7 @@ import './styles/index.css';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/dat-a-boi-landing-page"> {/* Add basename */}
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/tire-sales" element={<TireSales />} />

@@ -38,7 +38,7 @@ function LandingPage() {
             {/* Hero Section */}
             <div className="flex-grow flex flex-col items-center justify-center px-8 text-center py-12">
                 <div className="flex flex-col md:flex-row items-center justify-center px-8 text-center py-12">
-                    <img src="/dab-logo-with-text.png" alt="Dat A Boi Enterprises Logo" className="w-auto sm:w-auto md:w-auto lg:w-1/3 object-contain" />
+                    <img src="./dab-logo-with-text.png" alt="Dat A Boi Enterprises Logo" className="w-auto sm:w-auto md:w-auto lg:w-1/3 object-contain" />
 
                 </div>
                 <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12">
