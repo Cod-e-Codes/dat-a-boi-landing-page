@@ -161,12 +161,12 @@ function PhotographyPortfolio() {
     ];
 
     const portfolioItems = [
-        { image: './wedding-bliss.webp', title: 'Wedding Bliss', description: 'A beautiful wedding day captured in every frame.', collection: ['/wedding-bliss.webp', '/wedding-bliss.webp', '/wedding-bliss.webp'], },
-        { image: './urban-skyline.webp', title: 'Urban Skyline', description: 'The breathtaking view of the city skyline at dusk.', collection: ['/urban-skyline.webp', '/urban-skyline.webp', '/urban-skyline.webp'], },
-        { image: './sunset-beach.webp', title: 'Sunset Beach', description: 'A tranquil sunset over the calm beach waters.', collection: ['/sunset-beach.webp', '/sunset-beach.webp', '/sunset-beach.webp'], },
-        { image: './corporate-event.webp', title: 'Corporate Event', description: 'Professional photography at a major corporate event.', collection: ['/corporate-event.webp', '/corporate-event.webp', '/corporate-event.webp'], },
-        { image: './product-showcase.webp', title: 'Product Showcase', description: 'Showcasing products in a creative and appealing way.', collection: ['/product-showcase.webp', '/product-showcase.webp', '/product-showcase.webp'], },
-        { image: './creative-artwork.webp', title: 'Creative Artwork', description: 'Artistic photography with a creative edge.', collection: ['/creative-artwork.webp', '/creative-artwork.webp', '/creative-artwork.webp'], },
+        { image: './wedding-bliss.webp', title: 'Wedding Bliss', description: 'A beautiful wedding day captured in every frame.', collection: ['./wedding-bliss.webp', './wedding-bliss.webp', './wedding-bliss.webp'], },
+        { image: './urban-skyline.webp', title: 'Urban Skyline', description: 'The breathtaking view of the city skyline at dusk.', collection: ['./urban-skyline.webp', './urban-skyline.webp', './urban-skyline.webp'], },
+        { image: './sunset-beach.webp', title: 'Sunset Beach', description: 'A tranquil sunset over the calm beach waters.', collection: ['./sunset-beach.webp', './sunset-beach.webp', './sunset-beach.webp'], },
+        { image: './corporate-event.webp', title: 'Corporate Event', description: 'Professional photography at a major corporate event.', collection: ['./corporate-event.webp', './corporate-event.webp', './corporate-event.webp'], },
+        { image: './product-showcase.webp', title: 'Product Showcase', description: 'Showcasing products in a creative and appealing way.', collection: ['./product-showcase.webp', './product-showcase.webp', './product-showcase.webp'], },
+        { image: './creative-artwork.webp', title: 'Creative Artwork', description: 'Artistic photography with a creative edge.', collection: ['./creative-artwork.webp', './creative-artwork.webp', './creative-artwork.webp'], },
     ];
 
     return (
