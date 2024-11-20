@@ -89,7 +89,7 @@ function LandingPage() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            {['Tire Sales', 'Photography', 'About Us', 'Contact'].map((link) => (
+                            {['Tire Sales', 'Photography Portfolio', 'About Us', 'Contact'].map((link) => (
                                 <li key={link}>
                                     <Link to={`/${link.toLowerCase().replace(/ /g, '-')}`} className="hover:underline">
                                         {link}
