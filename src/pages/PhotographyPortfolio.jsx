@@ -185,7 +185,7 @@ function PhotographyPortfolio() {
                             Dat A Boi <span className="text-regalia">Photography</span>
                         </h1>
                         <a
-                            href="/"
+                            href="/dat-a-boi-landing-page/"
                             className="text-gray-400 hover:text-white transition text-sm md:text-base underline"
                         >
                             Back to Home
