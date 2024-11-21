@@ -104,7 +104,7 @@ function TireDetailsModal({ tire, onClose, addToCart }) {
                         });
                         onClose(); // Close modal after adding to cart
                     }}
-                    className="mt-6 px-6 py-2 bg-clemsonOrange hover:bg-campusBrick text-white rounded-lg w-full"
+                    className={`mt-6 px-6 py-2 bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-lg w-full`}
                 >
                     Add to Cart
                 </button>
@@ -459,7 +459,7 @@ function TireSales() {
 
                                 {/* Add to Cart Button */}
                                 <button
-                                    className="mt-4 px-6 py-2 bg-clemsonOrange hover:bg-campusBrick text-white rounded-lg"
+                                    className={`mt-4 px-6 py-2 bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-lg`}
                                     onClick={(e) => {
                                         e.stopPropagation(); // Prevent modal from opening when clicking the Add to Cart button
                                         addToCart(product); // Add to Cart function
@@ -481,7 +481,7 @@ function TireSales() {
                 {/* Floating Action Button */}
                 <div className="fixed bottom-8 right-8 z-50">
                     <button
-                        className="relative bg-clemsonOrange hover:bg-campusBrick text-white rounded-full shadow-lg w-16 h-16 flex items-center justify-center text-2xl"
+                        className="relative bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl"
                         onClick={toggleCart}
                     >
                         <i className="fas fa-shopping-cart"></i>
@@ -545,7 +545,9 @@ function TireSales() {
                             )}
                             <div className="mt-6">
                                 <p className="text-lg font-bold">Total: ${totalPrice.toFixed(2)}</p>
-                                <button className="mt-4 w-full py-2 bg-clemsonOrange hover:bg-campusBrick text-white rounded-lg">
+                                <button
+                                    className="mt-4 w-full py-2 bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-lg"
+                                >
                                     Checkout
                                 </button>
                             </div>
@@ -642,9 +644,7 @@ function TireSales() {
 
                         {/* Conditional rendering for send button and spinner */}
                         <button
-                            className={`py-2 px-6 rounded-lg text-white transition-all ${isSending
-                                ? 'bg-gray-500 cursor-not-allowed'
-                                : 'bg-clemsonOrange hover:bg-campusBrick'
+                            className={`py-2 px-6 bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-lg ${isSending ? 'bg-gray-500 cursor-not-allowed' : ''
                                 }`}
                             disabled={isSending}
                         >

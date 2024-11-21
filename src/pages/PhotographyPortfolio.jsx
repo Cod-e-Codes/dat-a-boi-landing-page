@@ -485,9 +485,7 @@ function PhotographyPortfolio() {
 
                         {/* Conditional rendering for send button and spinner */}
                         <button
-                            className={`py-2 px-6 rounded-lg text-white transition-all ${isSending
-                                ? 'bg-gray-500 cursor-not-allowed'
-                                : 'bg-regalia hover:bg-diploma'
+                            className={`py-2 px-6 font-bold text-white transition-all bg-gradient-to-b from-purple-600 to-purple-900 shadow-md shadow-black/50 hover:outline hover:outline-purple-500 focus:outline focus:outline-purple-500 duration-100 active:from-purple-800 active:to-purple-900 active:translate-y-px rounded-lg ${isSending ? 'bg-gray-500 cursor-not-allowed' : ''
                                 }`}
                             disabled={isSending}
                         >

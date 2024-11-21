@@ -154,7 +154,7 @@ function LandingPage() {
                             </div>
                             <button
                                 type="submit"
-                                className={`w-full px-4 py-3 rounded-lg transition ${isSubscribing ? 'bg-gray-500 cursor-not-allowed' : 'bg-clemsonOrange hover:bg-campusBrick'
+                                className={`w-full px-4 py-3 rounded-lg bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px ${isSubscribing ? 'bg-gray-500 cursor-not-allowed' : ''
                                     }`}
                                 disabled={isSubscribing}
                             >

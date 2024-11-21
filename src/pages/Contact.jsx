@@ -115,9 +115,7 @@ function Contact() {
                         </div>
                         <button
                             type="submit"
-                            className={`col-span-1 md:col-span-2 px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold text-base md:text-lg transition ${isSending
-                                ? "bg-gray-500 cursor-not-allowed"
-                                : "bg-clemsonOrange hover:bg-campusBrick text-white"
+                            className={`col-span-1 md:col-span-2 px-4 md:px-6 py-2 md:py-3 font-bold text-base md:text-lg bg-gradient-to-b from-clemsonOrange to-campusBrick shadow-md shadow-black/50 hover:outline hover:outline-orange-500 focus:outline focus:outline-orange-500 transition-all duration-100 active:from-campusBrick active:to-orange-800 active:translate-y-px text-white rounded-lg ${isSending ? "bg-gray-500 cursor-not-allowed" : ""
                                 }`}
                             disabled={isSending}
                         >
