@@ -527,13 +527,13 @@ function TireSales() {
                                             </div>
                                             <div className="flex space-x-2">
                                                 <button
-                                                    className="px-3 py-1 bg-red-500 text-white rounded-lg"
+                                                    className="px-3 py-1 bg-gradient-to-b from-red-500 to-red-700 shadow-md shadow-black/50 hover:outline hover:outline-red-400 focus:outline focus:outline-red-400 transition-all duration-100 active:from-red-700 active:to-red-900 active:translate-y-px text-white rounded-lg"
                                                     onClick={() => removeFromCart(item.name)}
                                                 >
                                                     −
                                                 </button>
                                                 <button
-                                                    className="px-3 py-1 bg-green-500 text-white rounded-lg"
+                                                    className="px-3 py-1 bg-gradient-to-b from-green-500 to-green-700 shadow-md shadow-black/50 hover:outline hover:outline-green-400 focus:outline focus:outline-green-400 transition-all duration-100 active:from-green-700 active:to-green-900 active:translate-y-px text-white rounded-lg"
                                                     onClick={() => addToCart(item)}
                                                 >
                                                     +
