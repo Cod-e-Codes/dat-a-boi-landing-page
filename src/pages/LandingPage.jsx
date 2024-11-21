@@ -71,10 +71,10 @@ function LandingPage() {
                         className="mx-auto w-1/3 md:w-1/4 object-contain mb-8"
                     />
                     <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                        Premium Tire Sales & Stunning Photography
+                        Driving Excellence in Tires and Photography
                     </h1>
                     <p className="mt-4 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-                        Discover the perfect combination of high-quality tires and professional photography services tailored to meet your needs.
+                        At Dat A Boi Enterprises, we’re proud to lead diverse business ventures with a shared commitment to quality and customer satisfaction. Explore our premium tire sales and professional photography services—distinct yet unified by a passion for excellence.
                     </p>
                     <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                         <Link
